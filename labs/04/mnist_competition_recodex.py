@@ -2,8 +2,8 @@
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("test_data", type=str, help="Path to test data.")
-parser.add_argument("sources", type=str, nargs="+", help="Path to sources.")
+parser.add_argument("--test_data", type=str, help="Path to test data.")
+parser.add_argument("--sources", type=str, nargs="+", help="Path to sources.")
 args = parser.parse_args()
 
 def as_triple_quoted_literal(s):
